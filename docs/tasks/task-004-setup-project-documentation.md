@@ -2,7 +2,7 @@
 
 ## Epic
 
-EPIC-01
+EPIC-01: Project Initialization
 
 --------------------------------------------
 
