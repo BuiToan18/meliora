@@ -100,6 +100,6 @@ docs: add project documentation structure
 - [ ] Review hoàn tất
 --------------------------------------------
 
-## 🚀 Status
+## Status
 
 Done
