@@ -2,25 +2,33 @@
 
 ## EPIC-01 Project Initialization
 
-### ✅ TASK-001
+### ✅ TASK-001 Project Setup
+✅ Done
 
-Project Setup
+### ✅ TASK-002 Git Repository Setup
+✅ Done
 
-### ✅ TASK-002
+### ✅ TASK-003 Initial Project Structure
+✅ Done
 
-Git Repository Setup
+### ✅ TASK-004 Project Documentation
+✅ Done
 
-### ✅ TASK-003
+### TASK-004.1 Create Handbook Structure 
+✅ Done
 
-Initial Project Structure
+### 🟡 TASK-005 Git Workflow
+🟡 In Progress
 
-### ✅ TASK-004
+✅ Feature Branch Workflow
 
-Project Documentation
+✅ Pull Request Workflow
 
-### 🟡 TASK-005
+✅ Git Stash
 
-Git Workflow
+✅ Git Conflict
+
+✅ Git Merge Strategy
 
 ### ⬜ TASK-006
 

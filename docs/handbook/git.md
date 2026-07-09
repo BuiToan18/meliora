@@ -340,3 +340,176 @@ Pull Request sẽ tự động cập nhật.
 Lưu ý.
 
 Một số công ty sẽ yêu cầu Review lại nếu Pull Request có Commit mới sau khi đã được Approve.
+
+===================================================
+
+## Git Stash
+
+Git Stash được tạo ra để lưu tạm công việc đang dang dở (Work In Progress).
+
+Mục đích:
+
+- Không tạo Commit rác.
+- Không làm bẩn Git History.
+- Có thể chuyển sang làm Task khác.
+- Quay lại tiếp tục công việc sau.
+
+Rule:
+
+Nếu code chưa hoàn chỉnh → Stash.
+
+Nếu code hoàn chỉnh → Commit.
+
+====================================================
+
+ ## Git Stash
+
+### git stash
+
+Lưu tạm Work In Progress vào Stash.
+
+---
+
+### git stash pop
+
+- Khôi phục code từ Stash.
+- Xóa Stash sau khi khôi phục.
+
+---
+
+### git stash apply
+
+- Khôi phục code từ Stash.
+- Không xóa Stash.
+- Dùng khi muốn giữ lại bản Stash để sử dụng tiếp.
+
+======================================================
+
+## Git Stash Stack
+
+Git Stash hoạt động theo cơ chế Stack (LIFO).
+
+Last In First Out
+
+Stash sau cùng sẽ được lấy ra trước.
+
+Ví dụ:
+
+stash@{0} ← mới nhất
+
+stash@{1}
+
+stash@{2} ← cũ nhất
+
+Lệnh:
+
+git stash list
+
+Xem danh sách Stash.
+
+git stash pop
+
+Lấy stash mới nhất.
+
+git stash pop stash@{2}
+
+Lấy một stash cụ thể.
+
+##  Git Stask Mind Map
+
+Đang code
+    │
+    ▼
+Code chưa hoàn thành
+    │
+    ▼
+Không nên Commit
+    │
+    ▼
+git stash
+    │
+    ▼
+Git cất vào Stash Stack
+    │
+    ▼
+Working Directory sạch
+    │
+    ▼
+Checkout sang Branch khác
+    │
+    ▼
+Fix Bug / Task khác
+    │
+    ▼
+Quay lại Branch cũ
+    │
+    ▼
+git stash pop
+    │
+    ▼
+Tiếp tục làm việc
+    │
+    ▼
+Commit đẹp
+
+=================================================
+
+## Git Conflict
+
+Git Conflict KHÔNG xảy ra vì hai người sửa cùng một file.
+
+Git Conflict xảy ra khi:
+
+- Hai người sửa cùng một vùng code.
+- Git không thể tự Merge.
+
+Nếu hai người sửa các vùng khác nhau trong cùng một file.
+
+Hoặc.
+
+- Một người sửa.
+- Một người xóa.
+
+Git không thể tự quyết định nên giữ hay xóa đoạn code đó.
+
+→ Git vẫn có thể tự Merge.
+
+## Conflict không phải lỗi
+
+Git Conflict không có nghĩa ai làm sai.
+
+Conflict chỉ có nghĩa:
+
+- Có hai thay đổi cùng tác động lên một vùng code.
+- Git không thể tự quyết định phiên bản nào đúng.
+
+Developer cần đọc, hiểu và tự Resolve.
+
+# Git Conflict Workflow
+
+1. Git báo Conflict.
+
+2. Mở file bị Conflict.
+
+3. Đọc Conflict Marker.
+
+<<<<<<< HEAD
+
+Code của branch hiện tại.
+
+=======
+
+Code của branch được Merge.
+
+>>>>>>> origin/main
+
+4. Chỉnh sửa thành phiên bản đúng.
+
+5. Xóa toàn bộ Conflict Marker.
+
+6. git add .
+
+7. git commit
+
+8. git push
+
