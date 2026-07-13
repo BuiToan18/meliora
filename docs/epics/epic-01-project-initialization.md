@@ -21,3 +21,7 @@ Sau khi hoàn thành Epic này, dự án sẽ sẵn sàng cho việc phát tri�
 | TASK-001 | Development Environment | ✅ Done |
 | TASK-002 | Initialize Angular Project | ✅ Done |
 | TASK-003 | Setup Git & GitHub | ✅ Done |
+| TASK-004 | Setup project documentation | ✅ Done |
+| TASK-004.1 | Create handbook structure | ✅ Done |
+| TASK-005 | Git Workflow | ✅ Done |
+| TASK-006 | Project Convention | ✅ Done |

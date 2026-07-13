@@ -17,8 +17,8 @@
 ### TASK-004.1 Create Handbook Structure 
 ✅ Done
 
-### 🟡 TASK-005 Git Workflow
-🟡 In Progress
+### ✅ TASK-005 Git Workflow
+✅ Done
 
 ✅ Feature Branch Workflow
 
@@ -30,14 +30,26 @@
 
 ✅ Git Merge Strategy
 
-### ⬜ TASK-006
+### ✅ TASK-006 Project Convention
+✅ Done
 
-Project Convention
+✅ Folder Convention
+
+✅ File Naming
+
+✅ Angular Convention
+
+✅ Variable Convention
+
+✅ SCSS Convention
+
+✅ Git Convention
+
 
 ---
 
-## EPIC-02 Design System
-
+## EPIC-02 Design System 
+🟡 In Progress
 ### TASK-007
 
 Design System Overview
