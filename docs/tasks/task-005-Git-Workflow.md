@@ -144,4 +144,4 @@ docs: add git workflow documentation
 
 ## Status
 
-🟡 In Progress
+Done
