@@ -1,0 +1,16 @@
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-md;
+  background: $gray-50;
+  color: $gray-800;
+  line-height: $line-height-normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
